@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <head>
+    <title>Stringy_string</title>
+  </head>
+<body>
+    <div style="padding-right:50px; padding-left:50px; padding-top:30px; padding-bottom:30px; border-style:groove; height:400px; width:65%;">
+    <h1>Stringy_string</h1>
+    <h2 style="color: grey;     font-family: 'Open Sans', sans-serif;">Here's the string methods works!</h2>
+        <p>Calculate lengths of string:<input type="text" id="len">&nbsp;<button type="button" onclick="length()">Calculate</button><span id="reflect1"></span></p>
+        
+       <p>Change letter to Uppercase:<input type="text" id="up" placeholder="Enter String in lowercase">&nbsp;<button type="button" onclick="upper()">Change</button><span id="reflect2"></span></p>
+        
+       <p>Change letter to Lowercase:<input type="text" id="low" placeholder="Enter String in UPPERCASE">&nbsp;<button type="button" onclick="lower()">Change</button><span id="reflect3"></span></p>
+        
+       <p>Concatenate two Strings:<input type="text" id="concat1" placeholder="Enter first string">&nbsp;<input type="text" id="concat2" placeholder="Enter second string"><button type="button" onclick="conca()">Concatenate</button><span id="reflect4"></span></p>
+    
+    <script>
+        function length(){
+            var x=document.getElementById("len").value;
+            document.getElementById("reflect1").innerHTML=x.length;
+        }
+        
+        function upper(){
+            var txt=document.getElementById("up").value;
+       document.getElementById("reflect2").innerHTML=txt.toUpperCase();
+        }
+        
+        function lower(){
+            var y=document.getElementById("low").value;
+       document.getElementById("reflect3").innerHTML=y.toLowerCase();
+     }
+        function conca(){
+            var a=document.getElementById("concat1").value;
+            var b=document.getElementById("concat2").value;
+       document.getElementById("reflect4").innerHTML=a.concat(" ",b);
+     }
+    </script>
+    </div>
+</body>
